@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img_transfer{
+            text-align: center;
+            color: pink;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="img_transfer">
+        <h1>随机一图</h1>
+        <hr>
+        <img src="" alt="" style="width: 1200px; height: 500px; border-radius: 20%;">
+    </div>
+    <script>
+        var arr = ["./img/1.jpg","./img/2.jpg", "./img/3.jpg", "./img/4.jpg", "./img/5.jpg", 
+                    "./img/6.jpg", "./img/7.jpg", "./img/8.jpg", "./img/9.jpg", "./img/10.jpg"];
+        var r = Math.floor(Math.random()*arr.length);
+        var m1 = document.querySelector('.img_transfer img');
+        // m1.src = arr[m1];
+        m1.src = arr[r];
+        // console.log(m1.src);
+        // console.log(arr[m1]);
+    
+    
+    </script>
+</body>
+
+</html>
